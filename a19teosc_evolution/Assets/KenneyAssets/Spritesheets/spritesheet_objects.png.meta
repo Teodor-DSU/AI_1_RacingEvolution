@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,9 +76,99 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_objects_51
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 34
+        width: 165
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b0106f3c389b74c8cbbf35399898a3
+      internalID: 2138093976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_objects_52
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 34
+        width: 165
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8d3fe644402ec4ea5d6276ccef63b9
+      internalID: -1411780031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +179,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet_objects_30: 1765680999
+      spritesheet_objects_17: 767793302
+      spritesheet_objects_5: -1421569591
+      spritesheet_objects_20: -447240771
+      spritesheet_objects_26: -1728384734
+      spritesheet_objects_28: -1450709705
+      spritesheet_objects_19: -1100259523
+      spritesheet_objects_35: -1700139814
+      spritesheet_objects_48: -291231230
+      spritesheet_objects_15: 1309288424
+      spritesheet_objects_21: 367499741
+      spritesheet_objects_47: -290762334
+      spritesheet_objects_12: -206503589
+      spritesheet_objects_25: -320322993
+      spritesheet_objects_16: 1198458510
+      spritesheet_objects_43: -42320974
+      spritesheet_objects_6: -574920512
+      spritesheet_objects_11: 349743623
+      spritesheet_objects_33: 592137400
+      spritesheet_objects_50: -1343786266
+      spritesheet_objects_44: -411249456
+      spritesheet_objects_22: -405159123
+      spritesheet_objects_1: -955522501
+      spritesheet_objects_29: -792081232
+      spritesheet_objects_32: -433454551
+      spritesheet_objects_36: -1584438440
+      spritesheet_objects_51: 2138093976
+      spritesheet_objects_37: 331828666
+      spritesheet_objects_13: -1954234963
+      spritesheet_objects_41: 488765106
+      spritesheet_objects_14: -1466309561
+      spritesheet_objects_4: 1835253945
+      spritesheet_objects_3: 1044327040
+      spritesheet_objects_38: 658468704
+      spritesheet_objects_39: -1486185736
+      spritesheet_objects_23: -2042980233
+      spritesheet_objects_49: 1262408583
+      spritesheet_objects_9: -1753178360
+      spritesheet_objects_0: -1703157339
+      spritesheet_objects_24: -274789590
+      spritesheet_objects_45: -858850841
+      spritesheet_objects_2: -716239433
+      spritesheet_objects_34: -1915276984
+      spritesheet_objects_8: 92259553
+      spritesheet_objects_10: 392405576
+      spritesheet_objects_42: 220342952
+      spritesheet_objects_31: -344247529
+      spritesheet_objects_46: 529683776
+      spritesheet_objects_40: 1839601919
+      spritesheet_objects_27: -1196878323
+      spritesheet_objects_18: 314703803
+      spritesheet_objects_7: -723815711
+      spritesheet_objects_52: -1411780031
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
