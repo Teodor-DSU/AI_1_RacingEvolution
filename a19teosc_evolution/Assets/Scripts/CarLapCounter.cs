@@ -9,6 +9,8 @@ public class CarLapCounter : MonoBehaviour
     private float _timeAtLastCheckpoint = 0f;
     private int _totalCheckpointsPassed = 0;
 
+    public event Action<CarLapCounter> PassedACheckpoint; 
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Checkpoint"))
@@ -20,6 +22,8 @@ public class CarLapCounter : MonoBehaviour
                 _totalCheckpointsPassed++;
 
                 _timeAtLastCheckpoint = Time.time;
+                
+                PassedACheckpoint?.Invoke(this);
             }
         }
     }
