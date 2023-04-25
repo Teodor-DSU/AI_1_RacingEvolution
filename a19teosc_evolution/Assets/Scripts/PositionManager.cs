@@ -6,6 +6,7 @@ using UnityEngine;
 public class PositionManager : MonoBehaviour
 {
     public List<CarLapCounter> CLCounters = new List<CarLapCounter>();
+    [SerializeField] private IntEventSO computerCarCheckpointEvent;
     
     void Start()
     {

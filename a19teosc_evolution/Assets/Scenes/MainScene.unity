@@ -467,6 +467,7 @@ MonoBehaviour:
   messageColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  checkpointPassedEvent: {fileID: 0}
 --- !u!1 &79365155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,6 +1917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CLCounters: []
+  computerCarCheckpointEvent: {fileID: 0}
 --- !u!1 &540930077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,6 +3672,7 @@ GameObject:
   - component: {fileID: 1157482732}
   - component: {fileID: 1157482734}
   - component: {fileID: 1157482733}
+  - component: {fileID: 1157482735}
   m_Layer: 0
   m_Name: ComputerCar
   m_TagString: Untagged
@@ -3809,6 +3812,7 @@ MonoBehaviour:
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  checkpointPassedEvent: {fileID: 0}
 --- !u!114 &1157482732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3824,6 +3828,7 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Track Edge
+  - Checkpoint
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 104.7
   m_SphereCastRadius: 0.25
@@ -3850,6 +3855,7 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 2
+  computerCheckpointEvent: {fileID: 0}
 --- !u!114 &1157482734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3880,6 +3886,20 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
+--- !u!114 &1157482735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157482726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 1
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &1162008702
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,6 +38,7 @@ public class CarLapCounter : MonoBehaviour
     [SerializeField] private Color messageColor = Color.yellow;
     [SerializeField] private BoolSO isRaceOver;
     [SerializeField] private IntSO lapAmount;
+    [SerializeField] private IntEventSO checkpointPassedEvent;
 
     public event Action<CarLapCounter> PassedACheckpoint;
 
@@ -78,10 +79,31 @@ public class CarLapCounter : MonoBehaviour
                 }
                 
                 PassedACheckpoint?.Invoke(this);
+                checkpointPassedEvent?.RaiseEvent(1);
 
                 if(positionText)
                     positionText.text = _carPosition.ToString();
             }
+            else if (_passedCheckpointNumber == cp.CheckpointNumber)
+            {
+                
+            }
+            else
+            {
+                checkpointPassedEvent?.RaiseEvent(-1);
+            }
         }
+    }
+
+    public void ResetTracking()
+    {
+        _passedCheckpointNumber = 0;
+        _timeAtLastCheckpoint = 0f;
+        _lapsCompleted = 0;
+        _finished = false;
+        _carPosition = 0;
+        totalLaps = 2;
+
+        isRaceOver.Bool = false;
     }
 }

@@ -83,4 +83,13 @@ public class PlayerCarController : MonoBehaviour
         _steeringInput = input.x;
         _accelerationInput = input.y;
     }
+
+    public void Halt()
+    {
+        _steeringInput = 0f;
+        _accelerationInput = 0f;
+        _rotationAngle = 0f;
+        
+        _rb.velocity = Vector2.zero;
+    }
 }
