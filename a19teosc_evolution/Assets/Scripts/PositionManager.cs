@@ -21,6 +21,11 @@ public class PositionManager : MonoBehaviour
 
     private void ACarPassedACheckpoint(CarLapCounter carLapCounter)
     {
-        Debug.Log($"Event: Car {carLapCounter.gameObject.name} has passed a checkpoint!");
+        CLCounters = CLCounters.OrderByDescending(s => s.PassedCheckpointNumber).
+            ThenBy(s => s.TimeAtLastCheckpoint).ToList();
+
+        int positionOfCar = CLCounters.IndexOf(carLapCounter) + 1;
+
+        carLapCounter.CarPosition = positionOfCar;
     }
 }

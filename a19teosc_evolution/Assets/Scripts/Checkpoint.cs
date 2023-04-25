@@ -12,4 +12,9 @@ public class Checkpoint : MonoBehaviour
         get { return checkpointNumber;}
         set { checkpointNumber = value; }
     }
+
+    public bool IsFinishLine
+    {
+        get { return isFinishLine; }
+    }
 }

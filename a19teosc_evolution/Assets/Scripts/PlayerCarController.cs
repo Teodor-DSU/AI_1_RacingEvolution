@@ -50,7 +50,6 @@ public class PlayerCarController : MonoBehaviour
 
         if (_accelerationInput == 0f)
         {
-            Debug.Log("Current drag: " + _rb.drag);
             _rb.drag = Mathf.Lerp(_rb.drag, 3.0f, Time.fixedDeltaTime * frictionWhenSlowingDown);
         }
         else
