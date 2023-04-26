@@ -15,7 +15,7 @@ public class DriverAgent : Agent
     [SerializeField] private IntEventSO computerCheckpointEvent;
     [SerializeField] private Transform startingPoint;
     [SerializeField] private CheckpointTracker CPTracker;
-
+    
     private void Awake()
     {
         carController = GetComponent<PlayerCarController>();

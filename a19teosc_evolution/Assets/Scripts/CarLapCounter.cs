@@ -38,6 +38,7 @@ public class CarLapCounter : MonoBehaviour
     [SerializeField] private Color messageColor = Color.yellow;
     [SerializeField] private BoolSO isRaceOver;
     [SerializeField] private IntSO lapAmount;
+    [SerializeField] private IntSO playerLapsDone;
     [SerializeField] private IntEventSO checkpointPassedEvent;
 
     public event Action<CarLapCounter> PassedACheckpoint;
@@ -67,8 +68,7 @@ public class CarLapCounter : MonoBehaviour
                 {
                     _passedCheckpointNumber = 0;
                     _lapsCompleted++;
-                    Debug.Log("Complete lap " + _lapsCompleted);
-
+                    
                     if (_lapsCompleted >= totalLaps)
                     {
                         _finished = true;
@@ -76,8 +76,9 @@ public class CarLapCounter : MonoBehaviour
                         victoryText.gameObject.SetActive(true);
                         victoryText.color = messageColor;
                         victoryText.text = victoryMessage;
-                        Debug.Log("Finish!");
                     }
+                    else if (playerLapsDone)
+                        playerLapsDone.Int++;
                 }
                 
                 PassedACheckpoint?.Invoke(this);
