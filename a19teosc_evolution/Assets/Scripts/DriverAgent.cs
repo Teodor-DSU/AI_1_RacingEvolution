@@ -9,8 +9,8 @@ using Random = UnityEngine.Random;
 
 public class DriverAgent : Agent
 {
-    private PlayerCarController carController;
-    private CarLapCounter carLaps;
+    private PlayerCarController _carController;
+    private CarLapCounter _carLaps;
 
     [SerializeField] private IntEventSO computerCheckpointEvent;
     [SerializeField] private Transform startingPoint;
@@ -18,8 +18,8 @@ public class DriverAgent : Agent
     
     private void Awake()
     {
-        carController = GetComponent<PlayerCarController>();
-        carLaps = GetComponent<CarLapCounter>();
+        _carController = GetComponent<PlayerCarController>();
+        _carLaps = GetComponent<CarLapCounter>();
         computerCheckpointEvent.OnEventRaised += GiveTakeReward;
     }
 
@@ -27,14 +27,14 @@ public class DriverAgent : Agent
     {
         transform.position = startingPoint.position + new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.3f, 0.3f), 0);
         transform.forward = startingPoint.forward;
-        carController.Halt();
-        carLaps.ResetTracking();
+        _carController.Halt();
+        _carLaps.ResetTracking();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        Vector3 nextCP = CPTracker.GetNextCheckpointPosition(carLaps.PassedCheckpointNumber).forward;
-        float nextDirection = Vector3.Dot(transform.forward, nextCP);
+        Vector3 nextCp = CPTracker.GetNextCheckpointPosition(_carLaps.PassedCheckpointNumber).forward;
+        float nextDirection = Vector3.Dot(transform.forward, nextCp);
         sensor.AddObservation(nextDirection);
     }
 
@@ -64,7 +64,7 @@ public class DriverAgent : Agent
 
         Vector2 input = new Vector2(turnAmount, forwardAmount);
         
-        carController.SetInputVector(input);
+        _carController.SetInputVector(input);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -86,7 +86,7 @@ public class DriverAgent : Agent
     {
         if (col.gameObject.CompareTag("Track Edge"))
         {
-            Debug.Log("DAMN!");
+            //Debug.Log("DAMN!");
             AddReward(-1f);
         }
     }
@@ -102,6 +102,6 @@ public class DriverAgent : Agent
     private void GiveTakeReward(int value)
     {
         AddReward(value);
-        Debug.Log("Reward: " + value);
+        //Debug.Log("Reward: " + value);
     }
 }

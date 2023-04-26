@@ -16,20 +16,11 @@ public class PositionManager : MonoBehaviour
         foreach (CarLapCounter car in CLCounters)
         {
             car.PassedACheckpoint += ACarPassedACheckpoint;
-            Debug.Log("Another one");
         }
     }
 
     private void ACarPassedACheckpoint(CarLapCounter carLapCounter)
     {
-        Debug.Log("bites the dust");
-            /* CLCounters = CLCounters.OrderByDescending(s => s.LapsCompleted).
-                 ThenBy(s => s.PassedCheckpointNumber).
-                 ThenBy(s => s.TimeAtLastCheckpoint).ToList();
-            
-            CLCounters.Sort((a, b) => (a.LapsCompleted + a.PassedCheckpointNumber * 0.001f).
-                CompareTo(b.LapsCompleted + b.PassedCheckpointNumber * 0.001f));*/
-        
         CLCounters = CLCounters.OrderByDescending(s => s.TotalCheckpointsPassed).
              ThenBy(s => s.TimeAtLastCheckpoint).ToList();
 

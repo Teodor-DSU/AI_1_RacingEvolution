@@ -1766,6 +1766,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Victory!
   messageColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  victoryJingle: {fileID: 388436660}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 11400000, guid: 6a0c58d3b9e681846a62eb28659c167d, type: 2}
@@ -4061,6 +4062,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -6331,6 +6333,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -7102,6 +7105,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -7725,6 +7729,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &388436659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388436661}
+  - component: {fileID: 388436660}
+  m_Layer: 0
+  m_Name: Victory jingle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &388436660
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388436659}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1fc57171474a1634dbde4ef2a541627d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &388436661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388436659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1644716, y: 1.263426, z: -0.23821723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &394986588
 GameObject:
   m_ObjectHideFlags: 0
@@ -8630,6 +8762,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &415464591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415464593}
+  - component: {fileID: 415464592}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &415464592
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415464591}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 69898bb4f7a808843aaf943aff09b8e1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.614
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &415464593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415464591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1644716, y: 1.263426, z: -0.23821723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &417431422
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,6 +9542,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -11846,6 +12107,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -12049,6 +12311,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &605231137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605231139}
+  - component: {fileID: 605231138}
+  m_Layer: 0
+  m_Name: Lose jingle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &605231138
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605231137}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 983c85ebd8b2ee04584b84c790b5cff3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &605231139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605231137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1644716, y: 1.263426, z: -0.23821723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &610181786
 GameObject:
   m_ObjectHideFlags: 0
@@ -12323,6 +12713,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 605231138}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 11400000, guid: 421b40591122baf4e80953fd91eac633, type: 2}
@@ -13556,6 +13947,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -15948,6 +16340,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -16551,6 +16944,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -17070,6 +17464,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -17547,6 +17942,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -18318,6 +18714,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -22084,6 +22481,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 605231138}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 11400000, guid: ca03acd5a89591b45ae83fe7b271a762, type: 2}
@@ -23227,6 +23625,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -23802,6 +24201,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -29506,6 +29906,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -32623,6 +33024,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}
@@ -36958,6 +37360,7 @@ MonoBehaviour:
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
+  victoryJingle: {fileID: 0}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
   positionContainer: {fileID: 0}

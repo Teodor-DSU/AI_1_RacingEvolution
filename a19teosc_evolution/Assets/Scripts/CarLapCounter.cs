@@ -54,6 +54,8 @@ public class CarLapCounter : MonoBehaviour
     [SerializeField] private TMP_Text victoryText;
     [SerializeField] private string victoryMessage = "Victory!";
     [SerializeField] private Color messageColor = Color.yellow;
+    [SerializeField] private AudioSource victoryJingle;
+    [Space(10)]
     [SerializeField] private BoolSO isRaceOver;
     [SerializeField] private IntSO lapAmount;
     [SerializeField] private IntSO positionContainer;
@@ -98,6 +100,7 @@ public class CarLapCounter : MonoBehaviour
                         victoryText.gameObject.SetActive(true);
                         victoryText.color = messageColor;
                         victoryText.text = victoryMessage;
+                        victoryJingle.Play();
                     }
                     else if (playerLapsDone)
                         playerLapsDone.Int++;
@@ -128,7 +131,7 @@ public class CarLapCounter : MonoBehaviour
         _lapsCompleted = 0;
         _finished = false;
         _carPosition = 0;
-        totalLaps = 2;
+        totalLaps = lapAmount.Int;
 
         isRaceOver.Bool = false;
     }
