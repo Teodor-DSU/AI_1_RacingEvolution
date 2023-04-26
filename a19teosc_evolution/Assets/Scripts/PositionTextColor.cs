@@ -8,6 +8,8 @@ public class PositionTextColor : MonoBehaviour
     [SerializeField] private Color firstPlace = Color.yellow;
     [SerializeField] private Color secondPlace = Color.blue;
     [SerializeField] private Color otherwise = Color.red;
+    [Space(10)] 
+    [SerializeField] private IntSO writtenCarPosition;
 
     private TMP_Text _text;
     
@@ -18,6 +20,8 @@ public class PositionTextColor : MonoBehaviour
 
     void Update()
     {
+        _text.text = writtenCarPosition.Int.ToString();
+        
         if (_text.text == "1")
         {
             _text.color = firstPlace;

@@ -8,6 +8,7 @@ public class LapText : MonoBehaviour
     [SerializeField] private IntSO totalLapAmount;
     [SerializeField] private IntSO playerLapsDone;
 
+    private int _writtenPlayerLaps = 0;
     private TMP_Text _text;
     
     void Start()
@@ -17,6 +18,7 @@ public class LapText : MonoBehaviour
 
     void Update()
     {
-        _text.text = $"Laps: {playerLapsDone.Int + 1.ToString()} / {totalLapAmount.Int.ToString()}";
+        _writtenPlayerLaps = playerLapsDone.Int + 1;
+        _text.text = $"Laps: {_writtenPlayerLaps.ToString()} / {totalLapAmount.Int.ToString()}";
     }
 }

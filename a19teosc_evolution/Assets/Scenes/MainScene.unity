@@ -1666,7 +1666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56779919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.03, y: -2.35, z: 0}
+  m_LocalPosition: {x: -7.9, y: -3, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drift: 0.7
   acceleration: 2
-  maxSpeed: 5
+  maxSpeed: 7
   reverseSpeedMultiplier: 0.5
   turnSpeed: 6
   turnLimiterForSpeed: 8
@@ -1763,12 +1763,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 409591548}
   victoryText: {fileID: 1539412614}
   victoryMessage: Victory!
   messageColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 11400000, guid: 6a0c58d3b9e681846a62eb28659c167d, type: 2}
   playerLapsDone: {fileID: 11400000, guid: e70690d64a07d1e40a07a30e7b16edb1, type: 2}
   checkpointPassedEvent: {fileID: 0}
 --- !u!1 &62519069
@@ -4058,12 +4058,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 6b658aa31e3127b4b8eb76ea8d5eeac5, type: 2}
 --- !u!61 &212081888
@@ -4178,7 +4178,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &213757912
 GameObject:
@@ -5264,7 +5264,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 610474826}
   - {fileID: 1854724833}
   - {fileID: 1205876044}
   - {fileID: 433998739}
@@ -5282,7 +5281,7 @@ Transform:
   - {fileID: 861711276}
   - {fileID: 880923607}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294686985
 GameObject:
@@ -6329,12 +6328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: abbec14e146f18e40b0da588bb64e8e5, type: 2}
 --- !u!61 &321180538
@@ -6449,7 +6448,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323684402
 GameObject:
@@ -7100,12 +7099,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 4e9b1cfe74c4a6e4d868adced621b668, type: 2}
 --- !u!61 &338286788
@@ -7220,7 +7219,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339247266
 GameObject:
@@ -8239,6 +8238,7 @@ MonoBehaviour:
   firstPlace: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   secondPlace: {r: 0, g: 0, b: 1, a: 1}
   otherwise: {r: 1, g: 0, b: 0, a: 1}
+  writtenCarPosition: {fileID: 11400000, guid: 6a0c58d3b9e681846a62eb28659c167d, type: 2}
 --- !u!114 &409591548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9279,12 +9279,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 27ecbd2c94abd234aac7fd50dfcddb7c, type: 2}
 --- !u!61 &433998736
@@ -9399,7 +9399,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439892297
 GameObject:
@@ -11843,12 +11843,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 214013cf8332c0242aa11773e1ae17b4, type: 2}
 --- !u!61 &567277063
@@ -11963,7 +11963,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &573674043
 GameObject:
@@ -12229,9 +12229,9 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 2600
+  MaxStep: 0
   computerCheckpointEvent: {fileID: 11400000, guid: 7f40a67b5301f3e44b0c691fb3fc5cab, type: 2}
-  startingPoint: {fileID: 757162823}
+  startingPoint: {fileID: 1708774787}
   CPTracker: {fileID: 394986590}
 --- !u!114 &610474819
 MonoBehaviour:
@@ -12255,9 +12255,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 05ac0101a34b37242bbb63d48c667bd4, type: 3}
   m_InferenceDevice: 3
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: RaceToGoal
   TeamId: 0
   m_UseChildSensors: 1
@@ -12302,7 +12302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drift: 0.7
-  acceleration: 2
+  acceleration: 1.8
   maxSpeed: 5
   reverseSpeedMultiplier: 0.5
   turnSpeed: 7
@@ -12320,12 +12320,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 11400000, guid: 421b40591122baf4e80953fd91eac633, type: 2}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 7f40a67b5301f3e44b0c691fb3fc5cab, type: 2}
 --- !u!61 &610474823
@@ -12435,12 +12435,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610474815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.418343, y: -8.380453, z: 0.16166155}
+  m_LocalPosition: {x: -7.67, y: -2.12, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 294527969}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &610575159
 GameObject:
@@ -13553,12 +13553,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 10e2a5a824a29634fac87664a5556d6f, type: 2}
 --- !u!61 &679728430
@@ -13673,7 +13673,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679889826
 GameObject:
@@ -14797,7 +14797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 757162823}
   m_Layer: 0
-  m_Name: ComStartPos
+  m_Name: ComStartPos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14810,13 +14810,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757162822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.574, y: -1.43, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3574944, y: -0.48147, z: -0.13849777}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 766463549}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759807630
 GameObject:
@@ -14967,7 +14967,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766430189
 GameObject:
@@ -15053,6 +15053,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &766463548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766463549}
+  m_Layer: 0
+  m_Name: Computer start positions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766463549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766463548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.2165055, y: -0.94852996, z: 0.13849777}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1708774787}
+  - {fileID: 757162823}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779075918
 GameObject:
   m_ObjectHideFlags: 0
@@ -15912,12 +15945,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: dcc3b5fa95c85784587b5fd9a6c610fe, type: 2}
 --- !u!61 &825192777
@@ -16032,7 +16065,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828594497
 GameObject:
@@ -16515,12 +16548,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: ead89007ea459f34c9c301abcbda8f1c, type: 2}
 --- !u!61 &848526049
@@ -16635,7 +16668,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &850438956
 GameObject:
@@ -17034,12 +17067,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 94ed8d96c945729459fbc80022cc0e35, type: 2}
 --- !u!61 &861711273
@@ -17154,7 +17187,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867109450
 GameObject:
@@ -17511,12 +17544,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: da48cad5ab6592c439b31a07aec1c47f, type: 2}
 --- !u!61 &880923604
@@ -17631,7 +17664,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &896725266
 GameObject:
@@ -18282,12 +18315,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: c2b419262f1a56b44a8067274b284681, type: 2}
 --- !u!61 &914467138
@@ -18402,7 +18435,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929921855
 GameObject:
@@ -22029,7 +22062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157482726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.64, y: -1.33, z: 0}
+  m_LocalPosition: {x: -7.64, y: -1.006, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -22048,12 +22081,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 11400000, guid: ca03acd5a89591b45ae83fe7b271a762, type: 2}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 6a263209e1385694093d648a8dae976c, type: 2}
 --- !u!114 &1157482732
@@ -23191,12 +23224,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 0b54d67733580f64a9c9d9b31300a4bb, type: 2}
 --- !u!61 &1205876041
@@ -23311,7 +23344,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1208302167
 GameObject:
@@ -23766,12 +23799,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 3dddb04060552b0488895165ab46902c, type: 2}
 --- !u!61 &1215110649
@@ -23886,7 +23919,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223041230
 GameObject:
@@ -28310,7 +28343,7 @@ RectTransform:
   - {fileID: 1539412613}
   - {fileID: 1607656254}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -29470,12 +29503,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: bb87fc860b2d5b74c8f470bc087703a5, type: 2}
 --- !u!61 &1501209104
@@ -29590,7 +29623,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1504441968
 GameObject:
@@ -32587,12 +32620,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: a4e5690b9b340604cbc39548b53f7087, type: 2}
 --- !u!61 &1624638969
@@ -32707,7 +32740,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626376242
 GameObject:
@@ -33675,6 +33708,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1708774786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708774787}
+  m_Layer: 0
+  m_Name: ComStartPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708774787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708774786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4734945, y: -1.3044698, z: -0.13849777}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 766463549}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716035025
 GameObject:
   m_ObjectHideFlags: 0
@@ -33832,7 +33896,7 @@ Transform:
   m_Children:
   - {fileID: 519420032}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1717400856
 MonoBehaviour:
@@ -36891,12 +36955,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776ce73592eade4e9d3dc23cd430181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionText: {fileID: 0}
   victoryText: {fileID: 1539412614}
   victoryMessage: Too bad!
   messageColor: {r: 0.015686274, g: 0.114920385, b: 1, a: 1}
   isRaceOver: {fileID: 11400000, guid: 549be8580cd21414683d7cc31d2be081, type: 2}
   lapAmount: {fileID: 11400000, guid: 7e717529e0f873946a37b21c051ed10f, type: 2}
+  positionContainer: {fileID: 0}
   playerLapsDone: {fileID: 0}
   checkpointPassedEvent: {fileID: 11400000, guid: 1989ca2a6e83cf745aef0dba24b1bac3, type: 2}
 --- !u!61 &1854724830
@@ -37011,7 +37075,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 294527969}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858222766
 GameObject:

@@ -8,16 +8,28 @@ public class CarLapCounter : MonoBehaviour
 {
     private int _passedCheckpointNumber = 0;
     private float _timeAtLastCheckpoint = 0f;
-    //private int _totalCheckpointsPassed = 0;
+    private int _totalCheckpointsPassed = 0;
     private int _lapsCompleted = 0;
     private bool _finished = false;
     private int _carPosition = 0;
     private int totalLaps = 2;
 
+    public int LapsCompleted
+    {
+        get { return _lapsCompleted; }
+        set { _lapsCompleted = value; }
+    }
+    
     public int PassedCheckpointNumber
     {
         get { return _passedCheckpointNumber; }
         set { _passedCheckpointNumber = value; }
+    }
+    
+    public int TotalCheckpointsPassed
+    {
+        get { return _totalCheckpointsPassed; }
+        set { _totalCheckpointsPassed = value; }
     }
     
     public float TimeAtLastCheckpoint
@@ -31,13 +43,20 @@ public class CarLapCounter : MonoBehaviour
         get { return _carPosition; }
         set { _carPosition = value; }
     }
+    
+    public int PositionContainer
+    {
+        get { return positionContainer.Int; }
+        set { positionContainer.Int = value; }
+    }
 
-    [SerializeField] private TMP_Text positionText;
+    //[SerializeField] private TMP_Text positionText;
     [SerializeField] private TMP_Text victoryText;
     [SerializeField] private string victoryMessage = "Victory!";
     [SerializeField] private Color messageColor = Color.yellow;
     [SerializeField] private BoolSO isRaceOver;
     [SerializeField] private IntSO lapAmount;
+    [SerializeField] private IntSO positionContainer;
     [SerializeField] private IntSO playerLapsDone;
     [SerializeField] private IntEventSO checkpointPassedEvent;
 
@@ -47,6 +66,9 @@ public class CarLapCounter : MonoBehaviour
     {
         totalLaps = lapAmount.Int;
         victoryText.gameObject.SetActive(false);
+        
+        if (playerLapsDone)
+            playerLapsDone.Int = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -60,7 +82,7 @@ public class CarLapCounter : MonoBehaviour
             if (_passedCheckpointNumber + 1 == cp.CheckpointNumber)
             {
                 _passedCheckpointNumber = cp.CheckpointNumber;
-                //_totalCheckpointsPassed++;
+                _totalCheckpointsPassed++;
 
                 _timeAtLastCheckpoint = Time.time;
 
@@ -84,8 +106,8 @@ public class CarLapCounter : MonoBehaviour
                 PassedACheckpoint?.Invoke(this);
                 checkpointPassedEvent?.RaiseEvent(1);
 
-                if(positionText)
-                    positionText.text = _carPosition.ToString();
+                /*if(positionText)
+                    positionText.text = _carPosition.ToString();*/
             }
             else if (_passedCheckpointNumber == cp.CheckpointNumber)
             {
@@ -101,6 +123,7 @@ public class CarLapCounter : MonoBehaviour
     public void ResetTracking()
     {
         _passedCheckpointNumber = 0;
+        _totalCheckpointsPassed = 0;
         _timeAtLastCheckpoint = 0f;
         _lapsCompleted = 0;
         _finished = false;
