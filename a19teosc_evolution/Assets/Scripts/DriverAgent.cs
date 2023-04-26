@@ -86,7 +86,8 @@ public class DriverAgent : Agent
     {
         if (col.gameObject.CompareTag("Track Edge"))
         {
-            AddReward(-0.5f);
+            Debug.Log("DAMN!");
+            AddReward(-1f);
         }
     }
 
@@ -101,5 +102,6 @@ public class DriverAgent : Agent
     private void GiveTakeReward(int value)
     {
         AddReward(value);
+        Debug.Log("Reward: " + value);
     }
 }

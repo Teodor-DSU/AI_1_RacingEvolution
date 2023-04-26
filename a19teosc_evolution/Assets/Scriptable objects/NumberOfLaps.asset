@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9b3c7a978b540488628c5b61a6b73d, type: 3}
   m_Name: NumberOfLaps
   m_EditorClassIdentifier: 
-  Int: 1
+  Int: 2

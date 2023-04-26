@@ -1,0 +1,65 @@
+{
+    "RaceToGoal": {
+        "checkpoints": [
+            {
+                "steps": 398052,
+                "file_path": "results\\YTest03\\RaceToGoal\\RaceToGoal-398052.onnx",
+                "reward": 7.530000446571244,
+                "creation_time": 1682514602.6790729,
+                "auxillary_file_paths": [
+                    "results\\YTest03\\RaceToGoal\\RaceToGoal-398052.pt"
+                ]
+            },
+            {
+                "steps": 499996,
+                "file_path": "results\\YTest03\\RaceToGoal\\RaceToGoal-499996.onnx",
+                "reward": null,
+                "creation_time": 1682516037.7432325,
+                "auxillary_file_paths": [
+                    "results\\YTest03\\RaceToGoal\\RaceToGoal-499996.pt"
+                ]
+            },
+            {
+                "steps": 999950,
+                "file_path": "results\\YTest03\\RaceToGoal\\RaceToGoal-999950.onnx",
+                "reward": null,
+                "creation_time": 1682516726.4787302,
+                "auxillary_file_paths": [
+                    "results\\YTest03\\RaceToGoal\\RaceToGoal-999950.pt"
+                ]
+            },
+            {
+                "steps": 1069326,
+                "file_path": "results\\YTest03\\RaceToGoal\\RaceToGoal-1069326.onnx",
+                "reward": null,
+                "creation_time": 1682517023.2817922,
+                "auxillary_file_paths": [
+                    "results\\YTest03\\RaceToGoal\\RaceToGoal-1069326.pt"
+                ]
+            },
+            {
+                "steps": 1466748,
+                "file_path": "results\\YTest03\\RaceToGoal\\RaceToGoal-1466748.onnx",
+                "reward": 189.26666650672755,
+                "creation_time": 1682517955.2462466,
+                "auxillary_file_paths": [
+                    "results\\YTest03\\RaceToGoal\\RaceToGoal-1466748.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1466748,
+            "file_path": "results\\YTest03\\RaceToGoal.onnx",
+            "reward": 189.26666650672755,
+            "creation_time": 1682517955.2462466,
+            "auxillary_file_paths": [
+                "results\\YTest03\\RaceToGoal\\RaceToGoal-1466748.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}

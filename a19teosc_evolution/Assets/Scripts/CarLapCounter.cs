@@ -52,7 +52,7 @@ public class CarLapCounter : MonoBehaviour
     {
         if (col.CompareTag("Checkpoint"))
         {
-            if (isRaceOver.Bool)
+            if (isRaceOver.Bool || _finished)
                 return;
             
             Checkpoint cp = col.GetComponent<Checkpoint>();
@@ -67,6 +67,7 @@ public class CarLapCounter : MonoBehaviour
                 {
                     _passedCheckpointNumber = 0;
                     _lapsCompleted++;
+                    Debug.Log("Complete lap " + _lapsCompleted);
 
                     if (_lapsCompleted >= totalLaps)
                     {
@@ -75,6 +76,7 @@ public class CarLapCounter : MonoBehaviour
                         victoryText.gameObject.SetActive(true);
                         victoryText.color = messageColor;
                         victoryText.text = victoryMessage;
+                        Debug.Log("Finish!");
                     }
                 }
                 

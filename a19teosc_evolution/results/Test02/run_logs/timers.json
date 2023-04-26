@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1682508080",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\Unity School Stuff\\RacingAI\\AI_1_RacingEvolution\\a19teosc_evolution\\venv\\Scripts\\mlagents-learn --run-id=Test02",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.0+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1682508145"
+    },
+    "total": 64.81329120000001,
+    "count": 1,
+    "self": 0.07008270000000039,
+    "children": {
+        "run_training.setup": {
+            "total": 0.3331210999999996,
+            "count": 1,
+            "self": 0.3331210999999996
+        },
+        "TrainerController.start_learning": {
+            "total": 64.41008740000001,
+            "count": 1,
+            "self": 0.00017370000001903918,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 64.40989139999999,
+                    "count": 1,
+                    "self": 64.40989139999999
+                },
+                "TrainerController._save_models": {
+                    "total": 2.229999999769916e-05,
+                    "count": 1,
+                    "self": 2.229999999769916e-05
+                }
+            }
+        }
+    }
+}
